@@ -1,0 +1,33 @@
+.material-btn{
+    position: relative;
+}
+.material-btn:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    border-radius: 50%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+.material-btn:focus{
+    outline: unset;
+}
+.material-btn:focus:not(:active)::after {
+    animation: ripple 0.25s linear;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(15);
+    }
+}
