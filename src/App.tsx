@@ -6,10 +6,10 @@ import Content from "./component/Content";
 
 function App() {
   return (
-    <div>
-        <Header/>
-        <div>
-            <Sidebar/>
+    <div className="flex">
+        <Sidebar/>
+        <div className="w-full">
+            <Header/>
             <Content/>
         </div>
     </div>
