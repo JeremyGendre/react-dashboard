@@ -45,7 +45,7 @@ Use this command in order to compile your tailwind-depending css files. It will 
 You'll have to use this command whenever you modify *tailwind.config.js* or *index.css* in order to make your css updated.
 
 
-N.B : this command is executed before each `yarn start` to make sure your css is correctly setup.
+N.B : this command is executed before each `yarn start` to make sure your css is correctly setted.
 
 ## Learn More
 
