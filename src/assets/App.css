@@ -1,7 +1,7 @@
-.material-btn{
+.material-btn, .material-large-btn{
     position: relative;
 }
-.material-btn:after{
+.material-btn:after, .material-large-btn:after{
     content: '';
     position: absolute;
     top: 50%;
@@ -14,11 +14,15 @@
     transform: scale(1, 1) translate(-50%);
     transform-origin: 50% 50%;
 }
-.material-btn:focus{
+.material-btn:focus, .material-large-btn:focus{
     outline: unset;
 }
 .material-btn:focus:not(:active)::after {
     animation: ripple 0.25s linear;
+}
+
+.material-large-btn:focus:not(:active)::after {
+    animation: largeRipple 0.25s linear;
 }
 
 .loader{
@@ -33,5 +37,16 @@
     100% {
         opacity: 0;
         transform: scale(15);
+    }
+}
+
+@keyframes largeRipple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40);
     }
 }
