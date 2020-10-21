@@ -11,8 +11,8 @@ export default function FlexPage(props: Props) {
     }
     return (
         <div>
-            { elements.map( () => {
-                return <p>{ props.text }</p>
+            { elements.map( (element) => {
+                return <p key={element}>{ props.text }</p>
             }) }
         </div>
     );
