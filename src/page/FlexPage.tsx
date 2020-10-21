@@ -4,13 +4,15 @@ type Props = {
     text: string
 };
 
-export default function FlexPage(props:Props) {
-    const content:Array<null> = [];
-    content.length = 50;
+export default function FlexPage(props: Props) {
+    const elements = [];
+    for(let i = 0; i < 50; i++){
+        elements.push(i);
+    }
     return (
         <div>
-            { content.map( () => {
-                return <p>{props.text}</p>
+            { elements.map( () => {
+                return <p>{ props.text }</p>
             }) }
         </div>
     );

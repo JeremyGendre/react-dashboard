@@ -2,75 +2,8 @@ import React from "react";
 
 export default function HomePage() {
     return (
-        <div>
-            <p>content1</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
-            <p>content</p>
+        <div className="flex m-auto">
+            <div className="m-auto text-4xl">Home page</div>
         </div>
     );
 }
