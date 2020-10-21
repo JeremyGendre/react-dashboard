@@ -21,6 +21,10 @@
     animation: ripple 0.25s linear;
 }
 
+.loader{
+    border-color: transparent white;
+}
+
 @keyframes ripple {
     0% {
         transform: scale(0);
