@@ -6,7 +6,7 @@ const ICON_SIZE = 24;
 
 export default function SidebarBody() {
     return (
-        <div className="text-lg mt-2">
+        <div className="text-lg mt-4">
             <SidebarLink path='/' text='Home' icon={<HiHome size={ ICON_SIZE }/>}/>
             <SidebarLink path='/statistics' text='Statistics' icon={<ImStatsDots size={ ICON_SIZE }/>}/>
             <SidebarLink path='/agenda' text='Agenda' icon={<BiCalendar size={ ICON_SIZE }/>}/>
