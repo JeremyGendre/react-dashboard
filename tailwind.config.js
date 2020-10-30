@@ -13,6 +13,9 @@ module.exports = {
       width : {
         '72': '20rem',
         '80': '24rem',
+      },
+      translate:{
+        '14' : '3.5rem'
       }
     },
   },
