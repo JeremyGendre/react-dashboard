@@ -25,6 +25,10 @@
     animation: largeRipple 0.25s linear;
 }
 
+.sidebar-link-submenu{
+
+}
+
 .loader{
     border-color: transparent white;
 }
