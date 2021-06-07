@@ -4,6 +4,7 @@ import {BiCalendar, BiMessageDetail, HiHome, ImStatsDots} from "react-icons/all"
 import SidebarSubmenuContainer from "./SidebarSubmenuContainer";
 
 const ICON_SIZE = 24;
+const SUB_ICON_SIZE = 20;
 
 export default function SidebarBody() {
     return (
@@ -16,9 +17,9 @@ export default function SidebarBody() {
                 icon={<BiMessageDetail size={ ICON_SIZE }/>}
                 text="ouais azy"
                 subLinks={[
-                    {text: 'tg', path: '/tg'},
+                    {text: 'tg', path: '/tg', icon: <HiHome size={ SUB_ICON_SIZE }/>},
                     {text: 'ouais re', path: '/ouais'},
-                    {text: 'salut', path: '/salut'},
+                    {text: 'salut', path: '/salut', icon: <ImStatsDots size={ SUB_ICON_SIZE }/>},
                 ]}
             />
         </div>

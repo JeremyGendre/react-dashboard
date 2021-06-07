@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 type LinkType = {
     text: string,
-    path: string
+    path: string,
+    icon?: ReactNode
 };
 
 type Props = {
@@ -33,8 +34,13 @@ export default function SidebarSubmenuContainer(props: PropsWithChildren<Props>)
             </button>
             <div className={`sidebar-link-submenu text-left ${isActive ? '' : 'hidden'}`}>
                 {props.subLinks.map((link, index) => (
-                    <Link to={link.path} key={index} className={`block hover:bg-white`}>
-                        {link.text}
+                    <Link to={link.path} key={index} className={`flex py-1 hover:bg-white`}>
+                        <div className="hidden md:block lg:hidden">
+                            {link.icon ? link.icon : '>'}
+                        </div>
+                        <div className="block md:hidden lg:block">
+                            {link.text}
+                        </div>
                     </Link>
                 ))}
             </div>
