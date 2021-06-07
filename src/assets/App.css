@@ -36,7 +36,7 @@
     right: 0.9rem;
     border-style: solid;
     border-width: 0 9px 9px;
-    border-color: rgba(113, 128, 150,1) transparent;
+    border-color: rgba(75, 85, 99, var(--tw-bg-opacity)) transparent;
     display: block;
     width: 0;
     z-index: 0;
